@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>java笔记</title>
+      <link href="/2022/09/15/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/java%E7%AC%94%E8%AE%B0/"/>
+      <url>/2022/09/15/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/java%E7%AC%94%E8%AE%B0/</url>
+      
+        <content type="html"><![CDATA[<h1>1 java概述</h1><h2 id="1-1-转义字符">1.1 转义字符</h2><ul><li>\t 一个制表位，实现对齐功能</li><li>\n 换行</li><li>\\ 一个\</li><li>\&quot; 一个“</li><li>\r 回车</li></ul><h2 id="1-2-注释">1.2 注释</h2><ul><li>单行注释：//注释文字</li><li>多行注释： /<em>注释文字</em>/</li><li>文档注释：</li></ul> <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@author</span></span><br><span class="hljs-comment"> * <span class="hljs-doctag">@version</span></span><br><span class="hljs-comment"> */</span><br></code></pre></td></tr></table></figure><h2 id="1-3-代码规范">1.3 代码规范</h2><ul><li>类、方法的注释，要以javadoc的方式来写</li><li>注释详细，着重告诉读者为什么这样写，如何修改，注意什么文问题等</li><li>使用tab、shift+tab</li><li>运算符和 = 两边习惯性各加一个空格</li><li>源文件使用utf-8编码</li><li>行宽度不要超过80字符</li><li>代码编写此行风格和行尾风格</li></ul><h2 id="1-4-JDK-JRE">1.4 JDK JRE</h2><ul><li>JDK(java开发工具包)</li><li>JDK = JRE + java开发工具包</li><li>JRE = JVM + java核心类库</li><li>JVM(java虚拟机)</li></ul><h1>2 变量</h1><h2 id="2-1-变量">2.1 变量</h2><ul><li><strong>基本介绍</strong><br>变量相当于内存中一个数据存储空间的表示，可以把变量看作是一个房间的门牌号，通过门牌号可以找到房间，通过变量名可以访问到变量（值)</li><li>注意事项和细节<ol><li>变量表示内存在的一个存储区域（不同的变量，类型不同，占用的空间大小不同）</li><li>该区域有自己的名称 （变量名）和类型（数据类型）</li><li>变量必须先声明，后使用，即有顺序</li><li>还区域的数据可以在同一类型范围内不断变化</li><li>变量在同一个作用域内不能重名</li><li>变量 = 变量名 + 值 + 数据类型</li></ol></li></ul><h2 id="2-2基本数据类型">2.2基本数据类型</h2><ul><li>整数</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>hexo_fluid_用户手册</title>
       <link href="/2022/09/11/hexo-fluid-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/index/"/>
       <url>/2022/09/11/hexo-fluid-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/index/</url>

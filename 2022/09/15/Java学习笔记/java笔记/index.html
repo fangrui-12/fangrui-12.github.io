@@ -18,22 +18,22 @@
   <meta name="author" content="FangRui">
   <meta name="keywords" content="博客">
   
-    <meta name="description" content="hello world">
+    <meta name="description" content="韩顺平Java学习笔记">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo_fluid_用户手册">
-<meta property="og:url" content="https://fangrui-12.github.io/2022/09/11/hexo-fluid-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/index/index.html">
+<meta property="og:title" content="java笔记">
+<meta property="og:url" content="https://fangrui-12.github.io/2022/09/15/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/java%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="牛马小旋风的Blog">
-<meta property="og:description" content="hello world">
+<meta property="og:description" content="韩顺平Java学习笔记">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-09-11T15:13:30.000Z">
-<meta property="article:modified_time" content="2022-09-12T12:21:49.146Z">
+<meta property="article:published_time" content="2022-09-15T11:13:00.000Z">
+<meta property="article:modified_time" content="2022-09-15T16:06:37.594Z">
 <meta property="article:author" content="FangRui">
-<meta property="article:tag" content="fluid使用手册">
+<meta property="article:tag" content="java">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>hexo_fluid_用户手册 - 牛马小旋风的Blog</title>
+  <title>java笔记 - 牛马小旋风的Blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -213,7 +213,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="hexo_fluid_用户手册"></span>
+            <span id="subtitle" data-typed-text="java笔记"></span>
           
         </div>
 
@@ -224,8 +224,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-09-11 23:13" pubdate>
-          2022年9月11日 晚上
+        <time datetime="2022-09-15 19:13" pubdate>
+          2022年9月15日 晚上
         </time>
       </span>
     
@@ -236,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          732 字
+          520 字
         
       </span>
     
@@ -247,7 +247,7 @@
         
         
         
-          7 分钟
+          5 分钟
         
       </span>
     
@@ -285,25 +285,64 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">hexo_fluid_用户手册</h1>
+            <h1 style="display: none">java笔记</h1>
             
             
               <div class="markdown-body">
                 
-                <p>详细操作方法请看 <a target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/">https://hexo.fluid-dev.com/docs/</a></p>
-<h1>标题部分</h1>
-<p>Front-matter 是文件最上方以 — 分隔的区域，用于指定个别文件的变量，举例来说：</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">文章标题</span><br><span class="hljs-attr">index_img:</span> <span class="hljs-string">/img/example.jpg</span><br><span class="hljs-attr">tag:</span> <span class="hljs-string">标签</span><br><span class="hljs-attr">categories:</span> <span class="hljs-string">分类</span><br><span class="hljs-attr">data:</span> <span class="hljs-string">××××-××-××</span> <span class="hljs-string">××:××:××</span><br><span class="hljs-attr">sticky:</span> <span class="hljs-number">100</span>  <span class="hljs-comment">#sticky 数值越大，该文章越靠前，达到类似于置顶的效果，其他未设置的文章依然按默认排序</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-<h2 id="分类和标签">分类和标签</h2>
-<p>只有文章支持分类和标签，您可以在 Front-matter 中设置。在其他系统中，分类和标签听起来很接近，但是在 Hexo 中两者有着明显的差别：分类具有顺序性和层次性，也就是说 Foo, Bar 不等于 Bar, Foo；而标签没有顺序和层次。</p>
-<figure class="highlight subunit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs subunit">categories:<br>- Diary<br><span class="hljs-keyword">tags:</span><br>- PS3<br>- Games<br></code></pre></td></tr></table></figure>
-<h3 id="分类方法的分歧">分类方法的分歧</h3>
-<p>如果您有过使用 WordPress 的经验，就很容易误解 Hexo 的分类方式。WordPress 支持对一篇文章设置多个分类，而且这些分类可以是同级的，也可以是父子分类。但是 Hexo 不支持指定多个同级分类。下面的指定方法：</p>
-<figure class="highlight nestedtext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs nestedtext"><span class="hljs-attribute">categories</span><span class="hljs-punctuation">:</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">Diary</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">Life</span><br></code></pre></td></tr></table></figure>
-<p>会使分类Life成为Diary的子分类，而不是并列分类。因此，有必要为您的文章选择尽可能准确的分类。</p>
-<p>如果你需要为文章添加多个分类，可以尝试以下 list 中的方法。</p>
-<figure class="highlight ldif"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs ldif"><span class="hljs-attribute">categories</span>:<br><span class="hljs-literal">-</span> [Diary, PlayStation]<br><span class="hljs-literal">-</span> [Diary, Games]<br><span class="hljs-literal">-</span> [Life]<br></code></pre></td></tr></table></figure>
-<p>此时这篇文章同时包括三个分类： PlayStation 和 Games 分别都是父分类 Diary 的子分类，同时 Life 是一个没有子分类的分类。</p>
+                <h1>1 java概述</h1>
+<h2 id="1-1-转义字符">1.1 转义字符</h2>
+<ul>
+<li>\t 一个制表位，实现对齐功能</li>
+<li>\n 换行</li>
+<li>\\ 一个\</li>
+<li>\&quot; 一个“</li>
+<li>\r 回车</li>
+</ul>
+<h2 id="1-2-注释">1.2 注释</h2>
+<ul>
+<li>单行注释：//注释文字</li>
+<li>多行注释： /<em>注释文字</em>/</li>
+<li>文档注释：</li>
+</ul>
+ <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs php"><span class="hljs-comment">/**</span><br><span class="hljs-comment"> * <span class="hljs-doctag">@author</span></span><br><span class="hljs-comment"> * <span class="hljs-doctag">@version</span></span><br><span class="hljs-comment"> */</span><br></code></pre></td></tr></table></figure>
+<h2 id="1-3-代码规范">1.3 代码规范</h2>
+<ul>
+<li>类、方法的注释，要以javadoc的方式来写</li>
+<li>注释详细，着重告诉读者为什么这样写，如何修改，注意什么文问题等</li>
+<li>使用tab、shift+tab</li>
+<li>运算符和 = 两边习惯性各加一个空格</li>
+<li>源文件使用utf-8编码</li>
+<li>行宽度不要超过80字符</li>
+<li>代码编写此行风格和行尾风格</li>
+</ul>
+<h2 id="1-4-JDK-JRE">1.4 JDK JRE</h2>
+<ul>
+<li>JDK(java开发工具包)</li>
+<li>JDK = JRE + java开发工具包</li>
+<li>JRE = JVM + java核心类库</li>
+<li>JVM(java虚拟机)</li>
+</ul>
+<h1>2 变量</h1>
+<h2 id="2-1-变量">2.1 变量</h2>
+<ul>
+<li><strong>基本介绍</strong><br>
+变量相当于内存中一个数据存储空间的表示，可以把变量看作是一个房间的门牌号，通过门牌号可以找到房间，通过变量名可以访问到变量（值)</li>
+<li>注意事项和细节
+<ol>
+<li>变量表示内存在的一个存储区域（不同的变量，类型不同，占用的空间大小不同）</li>
+<li>该区域有自己的名称 （变量名）和类型（数据类型）</li>
+<li>变量必须先声明，后使用，即有顺序</li>
+<li>还区域的数据可以在同一类型范围内不断变化</li>
+<li>变量在同一个作用域内不能重名</li>
+<li>变量 = 变量名 + 值 + 数据类型</li>
+</ol>
+</li>
+</ul>
+<h2 id="2-2基本数据类型">2.2基本数据类型</h2>
+<ul>
+<li>整数</li>
+</ul>
 
                 
               </div>
@@ -312,11 +351,32 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/java/" class="category-chain-item">java</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
   
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/fluid%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C/">#fluid使用手册</a>
+        <a href="/tags/java/">#java</a>
       
     </div>
   
@@ -328,8 +388,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>hexo_fluid_用户手册</div>
-      <div>https://fangrui-12.github.io/2022/09/11/hexo-fluid-用户手册/index/</div>
+      <div>java笔记</div>
+      <div>https://fangrui-12.github.io/2022/09/15/Java学习笔记/java笔记/</div>
     </div>
     <div class="license-meta">
       
@@ -341,7 +401,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年9月11日</div>
+          <div>2022年9月15日</div>
         </div>
       
       
@@ -371,18 +431,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/09/15/Java%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/java%E7%AC%94%E8%AE%B0/" title="java笔记">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">java笔记</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2022/09/11/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="第一篇博客">
-                        <span class="hidden-mobile">第一篇博客</span>
+                      <a href="/2022/09/11/hexo-fluid-%E7%94%A8%E6%88%B7%E6%89%8B%E5%86%8C/index/" title="hexo_fluid_用户手册">
+                        <span class="hidden-mobile">hexo_fluid_用户手册</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
